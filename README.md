@@ -1,7 +1,10 @@
 Portfolio Assessment
 Proposing a SOC Architecture for a Smart City Application
 Introduction
-A Smart City connects traffic systems, power grids, water management, public safety cameras and thousands of IoT sensors into one digital ecosystem. This large attack surface makes continuous security monitoring essential. A Security Operations Center (SOC) provides centralized, round-the-clock monitoring, detection, analysis and response to cyber threats across all smart city infrastructure, ensuring uninterrupted public services and protection of citizen data.
+A Smart City connects traffic systems, power grids, water management, public safety cameras and thousands of IoT sensors into one digital ecosystem. 
+This large attack surface makes continuous security monitoring essential. 
+A Security Operations Center (SOC) provides centralized, round-the-clock monitoring, detection, analysis and response to cyber threats across all smart city infrastructure, ensuring uninterrupted public services and protection of citizen data.
+
 Objectives
 ●	Continuously monitor smart city infrastructure and networks.
 ●	Detect and respond to cyber threats in real time.
@@ -16,21 +19,27 @@ Proposed Architecture:
  
 Main Security Components
 The proposed SOC Architecture uses several components to protect smart city devices, networks, data and citizen services. Each component performs a specific security function.
+
 Edge Gateways
 Edge gateways collect and pre-process data from traffic sensors, smart meters, cameras and other IoT devices before sending it into the core network.
+
 Firewall / Intrusion Prevention System (IPS)
 The firewall and IPS monitor incoming and outgoing traffic, blocking unauthorized connections and known attack patterns before they reach city systems.
+
 Network Segmentation
 Segmentation isolates traffic systems, power grid systems, water systems and public networks from each other, limiting lateral movement if one segment is compromised.
 
 Security Information and Event Management (SIEM)
 SIEM collects logs and events from all smart city systems, correlates them and generates alerts for suspicious activity across the entire city network.
+
 Threat Intelligence
 Threat intelligence feeds provide up-to-date information on known attackers, malware signatures and emerging threats relevant to critical infrastructure.
 SOC Tiers (Tier 1, 2, 3)
 Tier 1 analysts monitor alerts continuously, Tier 2 analysts investigate and analyze confirmed incidents, and Tier 3 analysts perform threat hunting and handle advanced incident response.
+
 Incident Response Team
 This team acts on confirmed incidents, contains threats, remediates affected systems and coordinates with city emergency services when public safety systems are impacted.
+
 Endpoint Detection and Response (EDR)
 EDR monitors control room workstations, servers and critical endpoints, helping detect and respond to malware or unauthorized access attempts.
 
